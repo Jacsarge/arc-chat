@@ -3,6 +3,8 @@ A Boost for Arc Browser that adds a little chatbot to talk about whatever page y
 
 -----
 
+🚨🚨 Requires OpenAI API Key, add in content.js 🚨🚨
+
 Arc Boost by jacsarge
 
 ✅ Uses current page context for question answering
