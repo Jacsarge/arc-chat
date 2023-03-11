@@ -1,0 +1,99 @@
+/* --arc-background-gradient-overlay-color0
+--arc-palette-cutoutColor
+--arc-background-gradient-color0
+--arc-background-gradient-overlay-color1
+--arc-palette-minContrastColor
+--arc-palette-foregroundSecondary
+--arc-palette-hover
+--arc-palette-focus
+--arc-palette-foregroundPrimary
+--arc-palette-foregroundTertiary
+--arc-palette-maxContrastColor
+--arc-palette-background
+--arc-palette-backgroundExtra
+--arc-background-gradient-color1
+--arc-palette-subtitle
+--arc-palette-title */
+body {
+
+}
+
+#chatButton {
+    background-color: var(--arc-palette-cutoutColor, royalblue);
+    color: var(--arc-palette-foregroundPrimary, white);
+    border-radius: 25%;
+    margin: 5px;
+    height: 20px;
+    width: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+#chatBox {
+    display: none;
+}
+
+#clearButton, #sendButton {
+    background-color: var(--arc-palette-cutoutColor, royalblue);
+    color: var(--arc-palette-foregroundPrimary, white);
+    border-radius: 25%;
+    border: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
+#selectButton {
+    background-color: var(--arc-palette-cutoutColor, royalblue);
+    color: var(--arc-palette-foregroundPrimary, white);
+    border-radius: 25%;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+}
+
+#chatInput {
+    width: 300px;
+    margin-bottom: -5px;
+    resize: none;
+    display: inline-block;
+}
+
+.chatContainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+    background-color: var(--arc-palette-background, black);
+    border-radius: 5px;
+    max-width: 450px;
+    max-height: 600px;
+}
+
+#outputContainer {
+    background-color: var(--arc-palette-minContrastColor, grey);
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    max-width: 450px;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.messageElement {
+    background-color: var(--arc-palette-minContrastColor, grey);
+    color: var(--arc-palette-foregroundSecondary, white);
+    padding: 5px;
+    border-radius: 5px;
+    font-size: small;
+}
+
+#info {
+    color: var(--arc-palette-foregroundPrimary, white);
+    display: inline-block;
+    margin: 5px;
+}
