@@ -93,14 +93,12 @@ document.addEventListener('click', (e) => {
 
 
 chatInput.addEventListener('input', () => {
-  chatInput.style.height = 'auto';
   if (chatInput.scrollHeight >= 60) {
     chatInput.style.height = '60px'
   }
   else{
     chatInput.style.height = chatInput.scrollHeight + 'px';
   }
-
 });
 
 
@@ -251,9 +249,13 @@ chatInput.addEventListener('keydown', (event) => {
   if (chatInput.value !== "") {
     if (event.key === 'Enter') {
         handleChat()
-
     }
   }
+});
 
-
+chatInput.addEventListener('keyup', (event) => {
+  if (event.key === 'Enter') {
+    chatInput.value = "";
+    chatInput.style.height = "";
+  }
 });
