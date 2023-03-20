@@ -14,9 +14,6 @@
 --arc-background-gradient-color1
 --arc-palette-subtitle
 --arc-palette-title */
-body {
-
-}
 
 #chatButton {
     background-color: var(--arc-palette-cutoutColor, royalblue);
@@ -27,6 +24,19 @@ body {
     width: 30px;
     border: none;
     cursor: pointer;
+}
+
+#chatTab, #boostTab {
+    background-color: var(--arc-palette-cutoutColor, royalblue);
+    color: var(--arc-palette-foregroundPrimary, white);
+    border-radius: 25%;
+    margin: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+#tabContainer {
+    display: none;
 }
 
 #chatBox {
@@ -62,6 +72,7 @@ body {
     margin-bottom: -5px;
     resize: none;
     display: inline-block;
+    height: auto;
 }
 
 .chatContainer {
@@ -96,4 +107,6 @@ body {
     color: var(--arc-palette-foregroundPrimary, white);
     display: inline-block;
     margin: 5px;
-}
+}  .preserve-line-breaks {
+    white-space: pre;
+  }
