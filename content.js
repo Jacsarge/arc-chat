@@ -123,8 +123,9 @@ chatInput.addEventListener('input', () => {
   if (chatInput.scrollHeight >= 60) {
     chatInput.style.height = '60px'
   }
-  else{
-    chatInput.style.height = chatInput.scrollHeight + 'px';
+  else {
+      chatInput.style.height = 'auto';
+      chatInput.style.height = chatInput.scrollHeight + 'px';
   }
 });
 
@@ -340,7 +341,7 @@ const handleChat = async (mode) => {
 sendButton.addEventListener('click', () => {
   if (chatInput.value !== "") {
     handleChat(mode)
-
+    chatInput.style.height = "";
   }
 });
 
